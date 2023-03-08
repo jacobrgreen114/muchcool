@@ -1,1 +1,1 @@
-# muchcool
+# MuchCool

@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(MuchCool)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/out/${CMAKE_BUILD_TYPE}/bin")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY  "${CMAKE_SOURCE_DIR}/out/${CMAKE_BUILD_TYPE}/bin")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY  "${CMAKE_SOURCE_DIR}/out/${CMAKE_BUILD_TYPE}/lib")
+
+add_subdirectory(external)
+
+set(CMAKE_C_STANDARD 23)
+set(CMAKE_CXX_STANDARD 23)
+# set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+
+
+add_subdirectory(lib)

@@ -1,0 +1,10 @@
+
+# Output Directories
+build/
+out/
+install/
+
+# IDE Files
+.vs/
+.vscode/
+.idea/
