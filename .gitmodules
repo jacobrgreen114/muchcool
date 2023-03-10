@@ -31,3 +31,18 @@
 [submodule "external/freetype"]
 	path = external/freetype
 	url = https://github.com/jacobrgreen114/freetype.git
+[submodule "external/googletest"]
+	path = external/googletest
+	url = https://github.com/google/googletest.git
+[submodule "app/ember"]
+	path = util/ember
+	url = https://github.com/jacobrgreen114/ember.git
+[submodule "external/rapidxml"]
+	path = external/rapidxml
+	url = https://github.com/jacobrgreen114/rapidxml.git
+[submodule "util/cmake_module"]
+	path = util/cmake_module
+	url = https://github.com/jacobrgreen114/cmake_module.git
+[submodule "external/CLI11"]
+	path = external/CLI11
+	url = https://github.com/CLIUtils/CLI11.git

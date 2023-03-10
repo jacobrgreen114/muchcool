@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+
+SortIncludes: Never
+SortUsingDeclarations: false
+
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+DerivePointerAlignment: false
+
+ColumnLimit: 80

@@ -1,4 +1,11 @@
+# Copyright (C) 2022-2023 Jacob R. Green
+# All Rights Reserved.
 
+# add_subdirectory(googletest)
+# add_subdirectory(bin2cpp)
+
+add_subdirectory(CLI11)
+add_subdirectory(rapidxml)
 
 add_subdirectory(Vulkan-Headers)
 add_subdirectory(Vulkan-Loader)
