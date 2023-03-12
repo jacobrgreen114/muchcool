@@ -17,6 +17,7 @@
         "default"
       ],
       "binaryDir": "build/debug",
+      "installDir": "install/debug",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -39,6 +40,7 @@
         "default"
       ],
       "binaryDir": "build/release",
+      "installDir": "install/release",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
