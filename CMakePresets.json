@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20
+  },
+  "configurePresets": [
+    {
+      "hidden": true,
+      "name": "default",
+      "generator": "Ninja"
+    },
+    {
+      "hidden": true,
+      "name": "default-debug",
+      "inherits": [
+        "default"
+      ],
+      "binaryDir": "build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "default-relwithdebinfo",
+      "inherits": [
+        "default"
+      ],
+      "binaryDir": "build/relwithdebinfo",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "default-release",
+      "inherits": [
+        "default"
+      ],
+      "binaryDir": "build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "default-windows",
+      "inherits": [
+        "default"
+      ],
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl.exe",
+        "CMAKE_CXX_COMPILER": "cl.exe"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "default-linux",
+      "inherits": [
+        "default"
+      ],
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang.exe",
+        "CMAKE_CXX_COMPILER": "clang++.exe"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "windows-debug",
+      "displayName": "Debug",
+      "inherits": [
+        "default-debug",
+        "default-windows"
+      ]
+    },
+    {
+      "name": "windows-relwithdebinfo",
+      "displayName": "RelWithDebInfo",
+      "inherits": [
+        "default-relwithdebinfo",
+        "default-windows"
+      ]
+    },
+    {
+      "name": "windows-release",
+      "displayName": "Release",
+      "inherits": [
+        "default-release",
+        "default-windows"
+      ]
+    },
+    {
+      "name": "linux-debug",
+      "displayName": "Debug",
+      "inherits": [
+        "default-debug",
+        "default-linux"
+      ]
+    },
+    {
+      "name": "linux-relwithdebinfo",
+      "displayName": "RelWithDebInfo",
+      "inherits": [
+        "default-relwithdebinfo",
+        "default-linux"
+      ]
+    },
+    {
+      "name": "linux-release",
+      "displayName": "Release",
+      "inherits": [
+        "default-release",
+        "default-linux"
+      ]
+    }
+  ]
+}
