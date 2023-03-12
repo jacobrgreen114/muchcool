@@ -46,3 +46,6 @@
 [submodule "external/CLI11"]
 	path = external/CLI11
 	url = https://github.com/CLIUtils/CLI11.git
+[submodule "lib/freetype-pp"]
+	path = lib/freetype-pp
+	url = https://github.com/jacobrgreen114/freetype-pp.git
